@@ -36,34 +36,34 @@ const sideBarData = [
     },
     {
         icon: <Building2 />,
-        path: '/',
+        path: 'organization',
         title: 'Organization'
     },
     {
         icon: <Package />,
-        path: '/',
+        path: 'assets',
         title: 'Assets'
     },
     {
         icon: <Hourglass />,
-        path: '/',
+        path: 'trade',
         title: 'Trade'
     },
     {
         icon: <CandlestickChart />,
-        path: '/',
+        path: 'history',
         title: 'History'
     },
     {
         icon: <WalletMinimal />,
-        path: '/',
+        path: 'wallet',
         title: 'Wallet'
     }
 ]
 
 
 const Sidebar = () => {
-    const {setIsExpanded, toggleSidebar} = useGlobalData()
+    const { setIsExpanded, toggleSidebar } = useGlobalData()
     return (
         <>
             <aside className='flex h-full max-h-screen flex-col sticky py-6 gap-2 bg-[#1b1e1c] overflow-hidden'>
@@ -77,7 +77,7 @@ const Sidebar = () => {
                             <span className='p-0 tracking-wide'>Cell</span>
                         </div>
                         <div className='text-white/80 hover:cursor-pointer'>
-                            <PanelRightOpen  onClick={toggleSidebar}/>
+                            <PanelRightOpen onClick={toggleSidebar} />
                         </div>
                     </div>
                 </div>
@@ -86,33 +86,7 @@ const Sidebar = () => {
                 </div>
                 <div className='flex-1'>
                     <nav className="grid items-start px-3 gap-3 text-sm font-medium lg:px-4">
-                        {/* <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2 transition-all hover:text-primary'>
-                            <Home className="h-4 w-4" />
-                            Home
-                        </div>
-
-                        <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2  transition-all hover:text-primary'>
-                            <Building2 className="h-4 w-4" />
-                            Organization
-                        </div>
-
-                        <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2 transition-all hover:text-primary'>
-                            <Package className="h-4 w-4" />
-                            Assets{" "}
-                        </div>
-                        <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2 transition-all hover:text-primary'>
-                            <Hourglass className="h-4 w-4" />
-                            Trade
-                        </div>
-                        <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2 transition-all hover:text-primary'>
-                            <CandlestickChart className="h-4 w-4" />
-                            History
-                        </div>
-                        <div className='flex items-center gap-3 text-white/80 rounded-lg px-3 py-2 transition-all hover:text-primary'>
-                            <WalletMinimal className="h-4 w-4" />
-                            Wallet
-                        </div> */}
-                        {sideBarData.map(item=><SideBarItem item={item}/>)}
+                        {sideBarData.map(item => <SideBarItem item={item} />)}
                     </nav>
                 </div>
                 {/* </div > */}

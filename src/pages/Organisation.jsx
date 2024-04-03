@@ -2,7 +2,7 @@ import React from 'react'
 
 const Organisation = () => {
   return (
-    <div>Organisation</div>
+    <div className='text-white'>Organisation</div>
   )
 }
 

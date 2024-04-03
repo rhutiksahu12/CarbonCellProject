@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import Layout from './components/layout/Layout'
 import MaxWidthWrapper from './components/utilityComponents/MaxWidthWrapper'
 import Dashboard from './pages/Dashboard'
@@ -8,7 +9,8 @@ function App() {
   return (
     <Layout>
       <MaxWidthWrapper>
-        <Dashboard />
+        {/* <Dashboard /> */}
+        <Outlet/>
       </MaxWidthWrapper>
     </Layout>
   )

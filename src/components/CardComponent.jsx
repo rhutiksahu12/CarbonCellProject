@@ -35,7 +35,7 @@ const CardComponent = ({item}) => {
                     </div>
                     <div className='flex justify-between items-center pt-2 '>
                         <BadgeInfo className='text-primary cursor-pointer' />
-                        <button className='text-xs text-center font-normal bg-primary px-3 py-1.5 rounded-md text-white'>Trade</button>
+                        <button className='text-xs text-center font-normal bg-primary px-3 py-1.5 rounded-md text-white hover:bg-primary/70'>Trade</button>
                     </div>
                 </CardContent>
             </Card>

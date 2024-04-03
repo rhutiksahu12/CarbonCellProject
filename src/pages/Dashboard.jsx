@@ -1,6 +1,6 @@
 import { getBitCoinData } from '@/api/bitCoinApi'
 import { getPopulationData } from '@/api/populationApi'
-import CardComponent from '@/components/Card'
+import CardComponent from '@/components/CardComponent'
 import LineCharts from '@/components/charts/LineCharts'
 import Layout from '@/components/layout/Layout'
 import MaxWidthWrapper from '@/components/utilityComponents/MaxWidthWrapper'
@@ -50,9 +50,9 @@ const Dashboard = () => {
                 </div>
             </section>
             <section className='w-full my-3'>
-                <div className='flex justify-between text-white text-base '>
-                    <span>Assets</span>
-                    <span>Today</span>
+                <div className='flex justify-between text-white text-base my-2'>
+                    <span>Bit Coin Prices Today</span>
+                    {/* <span>Today</span> */}
 
                 </div>
                 <div className='flex gap-4 flex-wrap'>

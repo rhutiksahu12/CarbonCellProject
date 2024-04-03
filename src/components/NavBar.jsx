@@ -23,7 +23,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className='w-full md:w-fit mt-4 md:mt-0'>
-                    <button className='bg-primary text-white px-3 py-2 rounded-sm w-full whitespace-nowrap'>Start Trading</button>
+                    <button className='bg-primary text-white px-3 py-2 rounded-sm w-full md:whitespace-nowrap hover:bg-primary/70'>Start Trading</button>
                 </div>
 
             </nav>

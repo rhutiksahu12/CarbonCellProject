@@ -1,8 +1,14 @@
+import Layout from '@/components/layout/Layout'
+import MaxWidthWrapper from '@/components/utilityComponents/MaxWidthWrapper'
 import React from 'react'
 
 const Settings = () => {
   return (
-    <div>Settings</div>
+  
+        <div className='text-white'>
+          Settings Page
+        </div>
+   
   )
 }
 
